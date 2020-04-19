@@ -1,43 +1,234 @@
 <!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>GradientAscent</title>
+		<title>Stellar by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	
-	<div id="particles-js" class="bg"></div>
 	<body class="is-preload">
+		
+		<!-- Wrapper -->
+		<div id="wrapper">
+		<div id="particles-js" class="bg"></div>
+			
 			<!-- Header -->
-			<header id="header">
+			<header id="header" class="alt">
+				<span class="logo"><img src="images/ga-transparent.png" alt="" /></span>
 				<h1>Gradient Ascent</h1>
-				<h2>Cloud-native data science consulting</h3>
-				<p>This website is under construction<br/>
-					Leave your email for updates</p>
-				</header>
+				<p>Cloud-native data science consulting<br />
+			</header>
 
-				<!-- Signup Form -->
-			<form id="signup-form" method="post" action="mailer.php">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
-			
-			<!-- Footer -->
-			<footer id="footer">
-				<!-- <ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul> -->
-				<ul class="copyright">
-					<li>&copy; GradientAscent.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-			
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="#activities" class="active">Activities</a></li>
+						<li><a href="#technologies">Technologies</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- Introduction -->
+						<!-- <section id="activities" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2>Ipsum sed adipiscing</h2>
+									</header>
+									<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+									adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
+									Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</div>
+								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+							</div>
+						</section> -->
+
+					<!-- Activities -->
+						<section id="activities" class="main special">
+							<header class="major">
+								<h2>Activities</h2>
+							</header>
+							<ul class="features">
+								<li>
+									<span class="icon solid major style1 fa-flask"></span>
+									<h3>Data Science</h3>
+									<p>from state-of-the-art models development to more general machine learning solutions</p>
+								</li>
+								<li>
+									<span class="icon solid major style3 fa-code"></span>
+									<h3>Software Engineering</h3>
+									<p>from minimal back-end microservices to complete cloud-native software applications</p>
+								</li>
+								<li>
+									<span class="icon solid major style5 fa-pallet"></span>
+									<h3>DataOps & DevOps</h3>
+									<p>from continous integration and deployment of software to continuous training of models</p>
+								</li>
+								<li>
+									<span class="icon solid major style5 fa-user-tie"></span>
+									<h3>Consulting & Training</h3>
+									<p>from AI workshops and defining an AI roadmap to training your data science team for cloud-native workflows</p>
+								</li>
+							</ul>
+							<footer class="major">
+								<ul class="actions special">
+									<li><a href="generic.html" class="button">Learn More</a></li>
+								</ul>
+							</footer>
+						</section>
+
+					<!-- Technologies -->
+						<section id="technologies" class="main special">
+							<header class="major">
+								<h2>Technologies</h2>
+								<p>Cloud-native data science means taking full use of cloud technologies<br />
+								to work with datasets of any size, automate data collection and processing, model training and deployment. </p>
+								<div class='marquee'>
+									<img src="images/techs/kubernetes.png">
+									<img src="images/techs/kubeflow.png">
+									<img src="images/techs/seldon.png">
+									<img src="images/techs/fastapi.png">
+									<img src="images/techs/python.png">
+									<img src="images/techs/numpy.png">
+									<img src="images/techs/pytorch.png">
+									<img src="images/techs/keras.png">
+									<img src="images/techs/sklearn.png">
+									<img src="images/techs/gcp.png">
+									<img src="images/techs/aws.png">
+								</div>
+								<p>Data management</p>
+								<p>Training management</p>
+								<p>Experiment tracking</p>
+								<p>Deployment</p>
+								<!-- Utilizing open-source tooling such as KubeFlow and Kubernetes, it is possible to achieve levels of automation, robustness and scalability that are multiples of previous standards.</p> -->
+							</header>
+							<!-- <footer class="major">
+								<ul class="actions special">
+									<li><a href="generic.html" class="button">Learn More</a></li>
+								</ul>
+							</footer> -->
+						</section>
+
+					<!-- Services -->
+						<section id="services" class="main special">
+							<header class="major">
+								<h2>Services</h2>
+								<h3 style="font-weight:500;">Data Science</h3>
+								<h4>State-of-the-art AI model development</h4>
+								<h4>Machine learning model development</h4>
+								
+								<h3 style="font-weight:500;">DataOps / DevOps</h3>
+								<h4>Model deployment</h4>
+								<h4>Model deployment automation</h4>
+								<h4>Model training automation (Continuous Training)</h4>
+								<h4>Cloud-native data science infrastructure & workflow implementation</h4>
+								
+								<h3 style="font-weight:500;">Software Engineering</h3>
+								<h4>Back-end microservice development</h4>
+								<h4>Back-end application development</h4>
+								<h4>Full cloud-native application development</h4>
+								
+								<h3 style="font-weight:500;">Consulting</h3>
+								<h4>AI workshop</h4>
+								<h4>AI use-case workshop</h4>
+								<h4>AI roadmap workshop</h4>
+							</header>
+							<!-- <footer class="major">
+								<ul class="actions special">
+									<li><a href="generic.html" class="button primary">Get Started</a></li>
+									<li><a href="generic.html" class="button">Learn More</a></li>
+								</ul>
+							</footer> -->
+						</section>
+
+					<!-- About -->
+						<section id="about" class="main special">
+							<header class="major">
+								<h2>About</h2>
+								<p>Recent advances in machine learning and computational capabilities have opened up a new world of possibilities, and cloud-native workflows and architectures allow for unprecedented scalability and infrastructure automation. Based in Amsterdam, Gradient Ascent was founded to explore and exploit these possibilities, and to help our clients to do the same. 
+							</header>
+							<!-- <footer class="major">
+								<ul class="actions special">
+									<li><a href="generic.html" class="button primary">Get Started</a></li>
+									<li><a href="generic.html" class="button">Learn More</a></li>
+								</ul>
+							</footer> -->
+						</section>
+
+						
+					</div>
+					
+					<!-- Footer -->
+					<footer id="footer">
+							<section class="container box style3">
+								<header>
+									<h2>Get in touch</h2>
+									<p>Reach out to discuss the possibilities.</p>
+								</header>
+								<form method="post" action="#">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-mobile"><input type="text" class="text" name="email" placeholder="Email" /></div>
+										<div class="col-12">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+					<!-- <section>
+						<h2>Aliquam sed mauris</h2>
+						<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn More</a></li>
+						</ul>
+					</section> -->
+					<section>
+						<h2>Gradient Ascent</h2>
+						<dl class="alt">
+							<dt>City</dt>
+							<dd>Amsterdam &bull; Netherlands</dd>
+							<dt>Email</dt>
+							<dd><a href="#">info@gradientascent.nl</a></dd>
+						</dl>
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+						</ul> -->
+					</section>
+					<p class="copyright">&copy; Gradient Ascent. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+			</div>
+
 			<!-- Scripts -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.marquee.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
 			<script src="assets/js/particles.js"></script>
 			<script src="assets/js/main.js"></script>
 	</body>

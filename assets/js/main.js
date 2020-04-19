@@ -1,282 +1,244 @@
 /*
-	Eventually by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-(function () {
 
-	"use strict";
-
-	var $body = document.querySelector('body');
-
-	// Methods/polyfills.
-
-	// classList | (c) @remy | github.com/remy/polyfills | rem.mit-license.org
-	!function () { function t(t) { this.el = t; for (var n = t.className.replace(/^\s+|\s+$/g, "").split(/\s+/), i = 0; i < n.length; i++)e.call(this, n[i]) } function n(t, n, i) { Object.defineProperty ? Object.defineProperty(t, n, { get: i }) : t.__defineGetter__(n, i) } if (!("undefined" == typeof window.Element || "classList" in document.documentElement)) { var i = Array.prototype, e = i.push, s = i.splice, o = i.join; t.prototype = { add: function (t) { this.contains(t) || (e.call(this, t), this.el.className = this.toString()) }, contains: function (t) { return -1 != this.el.className.indexOf(t) }, item: function (t) { return this[t] || null }, remove: function (t) { if (this.contains(t)) { for (var n = 0; n < this.length && this[n] != t; n++); s.call(this, n, 1), this.el.className = this.toString() } }, toString: function () { return o.call(this, " ") }, toggle: function (t) { return this.contains(t) ? this.remove(t) : this.add(t), this.contains(t) } }, window.DOMTokenList = t, n(Element.prototype, "classList", function () { return new t(this) }) } }();
-
-	// canUse
-	window.canUse = function (p) { if (!window._canUse) window._canUse = document.createElement("div"); var e = window._canUse.style, up = p.charAt(0).toUpperCase() + p.slice(1); return p in e || "Moz" + up in e || "Webkit" + up in e || "O" + up in e || "ms" + up in e };
-
-	// window.addEventListener
-	(function () { if ("addEventListener" in window) return; window.addEventListener = function (type, f) { window.attachEvent("on" + type, f) } })();
-
-	// Play initial animations on page load.
-	window.addEventListener('load', function () {
-		window.setTimeout(function () {
-			$body.classList.remove('is-preload');
-		}, 100);
-	});
+(function ($) {
 
 	particlesJS("particles-js", {
 		"particles": {
-		  "number": {
-			"value": 40,
-			"density": {
-			  "enable": true,
-			  "value_area": 800
-			}
-		  },
-		  "color": {
-			"value": "#ffffff"
-		  },
-		  "shape": {
-			"type": "circle",
-			"stroke": {
-			  "width": 0,
-			  "color": "#000000"
+			"number": {
+				"value": 40,
+				"density": {
+					"enable": true,
+					"value_area": 800
+				}
 			},
-			"polygon": {
-			  "nb_sides": 5
+			"color": {
+				// "value": "#0312da"
+				"value": "#00ff72"
+				// "value": "#ffffff"
 			},
-			"image": {
-			  "src": "img/github.svg",
-			  "width": 100,
-			  "height": 100
+			"shape": {
+				"type": "circle",
+				"stroke": {
+					"width": 0,
+					"color": "#00ff72"
+				},
+				"polygon": {
+					"nb_sides": 5
+				},
+				"image": {
+					"src": "img/github.svg",
+					"width": 100,
+					"height": 100
+				}
+			},
+			"opacity": {
+				"value": 0.5,
+				"random": false,
+				"anim": {
+					"enable": false,
+					"speed": 1,
+					"opacity_min": 0.1,
+					"sync": false
+				}
+			},
+			"size": {
+				"value": 3,
+				"random": true,
+				"anim": {
+					"enable": false,
+					"speed": 2,
+					"size_min": 0.1,
+					"sync": false
+				}
+			},
+			"line_linked": {
+				"enable": true,
+				"distance": 150,
+				"color": "#00ff72",
+				"opacity": 0.4,
+				"width": 1
+			},
+			"move": {
+				"enable": true,
+				"speed": 3,
+				"direction": "none",
+				"random": false,
+				"straight": false,
+				"out_mode": "out",
+				"bounce": true,
+				"attract": {
+					"enable": false,
+					"rotateX": 600,
+					"rotateY": 1200
+				}
 			}
-		  },
-		  "opacity": {
-			"value": 0.5,
-			"random": false,
-			"anim": {
-			  "enable": false,
-			  "speed": 1,
-			  "opacity_min": 0.1,
-			  "sync": false
-			}
-		  },
-		  "size": {
-			"value": 3,
-			"random": true,
-			"anim": {
-			  "enable": false,
-			  "speed": 2,
-			  "size_min": 0.1,
-			  "sync": false
-			}
-		  },
-		  "line_linked": {
-			"enable": true,
-			"distance": 150,
-			"color": "#ffffff",
-			"opacity": 0.4,
-			"width": 1
-		  },
-		  "move": {
-			"enable": true,
-			"speed": 3,
-			"direction": "none",
-			"random": false,
-			"straight": false,
-			"out_mode": "out",
-			"bounce": true,
-			"attract": {
-			  "enable": false,
-			  "rotateX": 600,
-			  "rotateY": 1200
-			}
-		  }
 		},
 		"interactivity": {
-		  "detect_on": "canvas",
-		  "events": {
-			"onhover": {
-			  "enable": true,
-			  "mode": "grab"
+			"detect_on": "canvas",
+			"events": {
+				"onhover": {
+					"enable": true,
+					"mode": "grab"
+				},
+				"onclick": {
+					"enable": true,
+					"mode": "push"
+				},
+				"resize": true
 			},
-			"onclick": {
-			  "enable": true,
-			  "mode": "push"
-			},
-			"resize": true
-		  },
-		  "modes": {
-			"grab": {
-			  "distance": 400,
-			  "line_linked": {
-				"opacity": 1
-			  }
-			},
-			"bubble": {
-			  "distance": 400,
-			  "size": 40,
-			  "duration": 2,
-			  "opacity": 8,
-			  "speed": 3
-			},
-			"repulse": {
-			  "distance": 200,
-			  "duration": 0.4
-			},
-			"push": {
-			  "particles_nb": 4
-			},
-			"remove": {
-			  "particles_nb": 2
+			"modes": {
+				"grab": {
+					"distance": 400,
+					"line_linked": {
+						"opacity": 1
+					}
+				},
+				"bubble": {
+					"distance": 400,
+					"size": 40,
+					"duration": 2,
+					"opacity": 8,
+					"speed": 3
+				},
+				"repulse": {
+					"distance": 200,
+					"duration": 0.4
+				},
+				"push": {
+					"particles_nb": 4
+				},
+				"remove": {
+					"particles_nb": 2
+				}
 			}
-		  }
 		},
 		"retina_detect": true
-	  });
-	// Slideshow Background.
-	// (function() {
+	});
 
-	// 	// Settings.
-	// 	var settings = {
+	var $window = $(window),
+		$body = $('body'),
+		$main = $('#main');
 
-	// 		// Images (in the format of 'url': 'alignment').
-	// 				images: {
-	// 					'images/bg01.jpg': 'center',
-	// 					'images/bg02.jpg': 'center',
-	// 					'images/bg03.jpg': 'center'
-	// 				},
+	// Breakpoints.
+	breakpoints({
+		xlarge: ['1281px', '1680px'],
+		large: ['981px', '1280px'],
+		medium: ['737px', '980px'],
+		small: ['481px', '736px'],
+		xsmall: ['361px', '480px'],
+		xxsmall: [null, '360px']
+	});
 
-	// 			// Delay.
-	// 				delay: 6000
+	// Play initial animations on page load.
+	$window.on('load', function () {
+		window.setTimeout(function () {
+			$body.removeClass('is-preload');
+		}, 100);
+	});
 
-	// 		};
+	// Nav.
+	var $nav = $('#nav');
 
-	// 	// Vars.
-	// 		var	pos = 0, lastPos = 0,
-	// 			$wrapper, $bgs = [], $bg,
-	// 			k, v;
+	if ($nav.length > 0) {
 
-	// 	// Create BG wrapper, BGs.
-	// 		$wrapper = document.createElement('div');
-	// 			$wrapper.id = 'bg';
-	// 			$body.appendChild($wrapper);
+		// Shrink effect.
+		$main
+			.scrollex({
+				mode: 'top',
+				enter: function () {
+					$nav.addClass('alt');
+				},
+				leave: function () {
+					$nav.removeClass('alt');
+				},
+			});
 
-	// 		for (k in settings.images) {
+		// Links.
+		var $nav_a = $nav.find('a');
 
-	// 			// Create BG.
-	// 				$bg = document.createElement('div');
-	// 					$bg.style.backgroundImage = 'url("' + k + '")';
-	// 					$bg.style.backgroundPosition = settings.images[k];
-	// 					$wrapper.appendChild($bg);
-
-	// 			// Add it to array.
-	// 				$bgs.push($bg);
-
-	// 		}
-
-	// 	// Main loop.
-	// 		$bgs[pos].classList.add('visible');
-	// 		$bgs[pos].classList.add('top');
-
-	// 		// Bail if we only have a single BG or the client doesn't support transitions.
-	// 			if ($bgs.length == 1
-	// 			||	!canUse('transition'))
-	// 				return;
-
-	// 		window.setInterval(function() {
-
-	// 			lastPos = pos;
-	// 			pos++;
-
-	// 			// Wrap to beginning if necessary.
-	// 				if (pos >= $bgs.length)
-	// 					pos = 0;
-
-	// 			// Swap top images.
-	// 				$bgs[lastPos].classList.remove('top');
-	// 				$bgs[pos].classList.add('visible');
-	// 				$bgs[pos].classList.add('top');
-
-	// 			// Hide last image after a short delay.
-	// 				window.setTimeout(function() {
-	// 					$bgs[lastPos].classList.remove('visible');
-	// 				}, settings.delay / 2);
-
-	// 		}, settings.delay);
-
-	// })();
-
-	// Signup Form.
-	(function () {
-
-		// Vars.
-		var $form = document.querySelectorAll('#signup-form')[0],
-			$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
-			$message;
-
-		// Bail if addEventListener isn't supported.
-		if (!('addEventListener' in $form))
-			return;
-
-		// Message.
-		$message = document.createElement('span');
-		$message.classList.add('message');
-		$form.appendChild($message);
-
-		$message._show = function (type, text) {
-
-			$message.innerHTML = text;
-			$message.classList.add(type);
-			$message.classList.add('visible');
-
-			window.setTimeout(function () {
-				$message._hide();
-			}, 3000);
-
-		};
-
-		$message._hide = function () {
-			$message.classList.remove('visible');
-		};
-
-		// Events.
-		// Note: If you're *not* using AJAX, get rid of this event listener.
-		$form.addEventListener('submit', function (event) {
-			event.stopPropagation();
-			event.preventDefault();
-			// Hide message.
-			$message._hide();
-			// Disable submit.
-			$submit.disabled = true;
-			// Process form.
-			var form = $('#signup-form');
-			var formData = $(form).serialize();
-			$.ajax({
-				type: 'POST',
-				url: $(form).attr('action'),
-				data: formData
+		$nav_a
+			.scrolly({
+				speed: 1000,
+				offset: function () { return $nav.height(); }
 			})
+			.on('click', function () {
 
-			window.setTimeout(function () {
+				var $this = $(this);
 
-				// Reset form.
-				$form.reset();
+				// External link? Bail.
+				if ($this.attr('href').charAt(0) != '#')
+					return;
 
-				// Enable submit.
-				$submit.disabled = false;
+				// Deactivate all links.
+				$nav_a
+					.removeClass('active')
+					.removeClass('active-locked');
 
-				// Show message.
-				$message._show('success', 'Thank you!');
-				//$message._show('failure', 'Something went wrong. Please try again.');
+				// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
+				$this
+					.addClass('active')
+					.addClass('active-locked');
 
-			}, 750);
+			})
+			.each(function () {
 
-		});
+				var $this = $(this),
+					id = $this.attr('href'),
+					$section = $(id);
 
-	})();
+				// No section for this link? Bail.
+				if ($section.length < 1)
+					return;
 
-})();
+				// Scrollex.
+				$section.scrollex({
+					mode: 'middle',
+					initialize: function () {
+
+						// Deactivate section.
+						if (browser.canUse('transition'))
+							$section.addClass('inactive');
+
+					},
+					enter: function () {
+
+						// Activate section.
+						$section.removeClass('inactive');
+
+						// No locked links? Deactivate all links and activate this section's one.
+						if ($nav_a.filter('.active-locked').length == 0) {
+
+							$nav_a.removeClass('active');
+							$this.addClass('active');
+
+						}
+
+						// Otherwise, if this section's link is the one that's locked, unlock it.
+						else if ($this.hasClass('active-locked'))
+							$this.removeClass('active-locked');
+
+					}
+				});
+
+			});
+
+	}
+
+	// Scrolly.
+	$('.scrolly').scrolly({
+		speed: 1000
+	});
+	$('.marquee').marquee({
+		// startVisible: true,
+		speed: 75,
+		duplicated: true,
+		gap: 0,
+		direction: 'left',
+		pauseOnHover: true
+	});
+
+})(jQuery);
