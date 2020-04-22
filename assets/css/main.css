@@ -2283,12 +2283,21 @@ input, select, textarea {
 		}
 
 		.icon.major {
-			border: solid 1px;
+			/* border: solid 1px; */
 			display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
-			margin: 0 0 2em 0;
+			margin: 0 0 1.1em 0;
 			cursor: default;
+		}
+
+		.cloud {
+			background-image: -webkit-linear-gradient(45deg, #0511da, #00ff72);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
 		}
 
 			.icon.major:before {
@@ -3101,7 +3110,7 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
-		height: 93vh;
+		/* height: 100vh; */
 	}
 
 		#header h1 {
@@ -3109,6 +3118,7 @@ input, select, textarea {
 		}
 
 		#header p {
+			color: white;
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
 		}
@@ -3119,9 +3129,17 @@ input, select, textarea {
 
 			#header.alt h1 {
 				font-size: 3.25em;
-				background: -webkit-linear-gradient(45deg, #0511da, #00ff72);
+				/* background: -webkit-linear-gradient(45deg, #0511da, #00ff72); */
+				background-image: -webkit-linear-gradient(45deg, #0511da, #00ff72);
+				background-size: 100%;
+				/* max-width: 300px;  */
+				/* max-height: 300px; */
+				background-size:contain;
+				background-repeat: repeat;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
+				-moz-background-clip: text;
+				-moz-text-fill-color: transparent;
 			}
 
 			#header.alt > * {
@@ -3576,12 +3594,18 @@ input, select, textarea {
 			color: #636363;
 		}
 
+		#main header.major h2 {
+			background-image: -webkit-linear-gradient(45deg, #0511da, #00ff72);
+			background-size: 100%;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
+		}
+
 		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -webkit-linear-gradient(45deg, #0511da, #00ff72);
+			background-size: 100%;
 		}
 
 		#main table tbody tr {
