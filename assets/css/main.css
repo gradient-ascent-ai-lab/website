@@ -3246,7 +3246,7 @@ table.alt tbody tr td {
 }
 
 .features li {
-  width: 100%;
+  width: calc(50% - 2em);
   /* margin-left: 2em; */
   /* margin-top: 3em; */
   margin-bottom: 2em;
@@ -3505,7 +3505,7 @@ table.alt tbody tr td {
 #header {
   padding: 5em 5em 1em 5em;
   text-align: center;
-  height: 93vh;
+  height: 92vh;
 }
 
 #header h1 {
