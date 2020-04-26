@@ -2733,19 +2733,19 @@ input[type="radio"]:focus + label:before {
 }
 
 .icon.style1 {
-  color: #0511da;
+  color: #4049d8;
 }
 
 .icon.style2 {
-  color: #0360b8;
+  color: #649dd2;
 }
 
 .icon.style3 {
-  color: #01b592;
+  color: #45b59f;
 }
 
 .icon.style4 {
-  color: #00ff72;
+  color: #5cec9d;
 }
 
 @media screen and (max-width: 1680px) {
@@ -3286,7 +3286,8 @@ table.alt tbody tr td {
   }
 
   .features li:nth-child(2),
-  .features li:nth-child(3) {
+  .features li:nth-child(3)
+  .features li:nth-child(4) {
     margin-top: 2em;
   }
 }

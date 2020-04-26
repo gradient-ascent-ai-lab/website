@@ -241,4 +241,8 @@
       },
     },
   });
+  $("#example").click(function() {
+    window.location.href = 'https://kubernetes.io/'
+  });
+
 })(jQuery);
