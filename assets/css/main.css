@@ -2762,7 +2762,7 @@ input[type="radio"]:focus + label:before {
 
 @media screen and (max-width: 736px) {
   .icon.major {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0 0;
     padding: 0.35em;
   }
 
@@ -3602,7 +3602,7 @@ table.alt tbody tr td {
   }
 
   #header p br {
-    display: none;
+    /* display: none; */
   }
 
   #header.alt {
