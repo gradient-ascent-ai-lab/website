@@ -96,7 +96,7 @@
 
 /* Particles background */
 
-.bg {
+#particles-js {
   z-index: -1;
   min-height: 100%;
   min-width: 1024px;
@@ -109,7 +109,7 @@
 
 #header,
 #footer #main * {
-  z-index: 3;
+  z-index: 1;
 }
 
 /* Owl Carousel */
