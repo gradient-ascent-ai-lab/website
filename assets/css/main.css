@@ -3505,7 +3505,7 @@ table.alt tbody tr td {
 #header {
   padding: 5em 5em 1em 5em;
   text-align: center;
-  /* height: 100vh; */
+  height: 93vh;
 }
 
 #header h1 {
@@ -3780,7 +3780,7 @@ body.is-preload #header.alt > * {
 /* Main */
 
 #main {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   color: #636363;
   border-radius: 0.25em;
 }
