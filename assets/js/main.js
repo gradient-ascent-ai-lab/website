@@ -227,7 +227,7 @@
     margin: 0,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 8500,
+    autoplayTimeout: 30,
     smartSpeed: 450,
     responsive: {
       0: {
@@ -241,8 +241,4 @@
       },
     },
   });
-  $("#example").click(function() {
-    window.location.href = 'https://kubernetes.io/'
-  });
-
 })(jQuery);
