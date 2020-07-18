@@ -2716,7 +2716,7 @@ input[type="radio"]:focus + label:before {
   height: 2.25em;
   line-height: 2.2em;
   border-radius: 100%;
-  border: solid 1px;
+  /* border: solid 1px; */
   text-align: center;
 }
 
@@ -3974,18 +3974,18 @@ body.is-preload #header.alt > * {
   color: rgba(99, 99, 99, 0.25) !important;
 }
 
-#main .icon.major {
-  border-color: #dddddd;
-}
+/* #main .icon.major { */
+  /* border-color: #dddddd; */
+/* } */
 
 /* #main .icon.major:before {
   border-color: #dddddd;
 } */
 
-#main .icon.alt {
+/* #main .icon.alt {
   border-color: #dddddd;
   color: #636363;
-}
+} */
 
 #main .icon.alt:hover {
   background-color: rgba(222, 222, 222, 0.25);
