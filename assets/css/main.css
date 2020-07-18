@@ -9,6 +9,11 @@
 
 /* Custom */
 
+.client-logo-placeholder {
+  margin-bottom: 15px;
+  color: #649dd2;
+}
+
 /* Testimonial Carousel */
 .shadow-effect {
   background: #fff;
@@ -22,9 +27,7 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 1.5;
-  margin: 0 0 17px 0;
   font-weight: 300;
-  height: 10em;
 }
 .testimonial-name {
   margin: -17px auto 0;
@@ -39,7 +42,7 @@
 }
 #testimonials-list .item {
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   opacity: 0.2;
   -webkit-transform: scale3d(0.8, 0.8, 1);
   transform: scale3d(0.8, 0.8, 1);
@@ -3975,9 +3978,9 @@ body.is-preload #header.alt > * {
   border-color: #dddddd;
 }
 
-#main .icon.major:before {
+/* #main .icon.major:before {
   border-color: #dddddd;
-}
+} */
 
 #main .icon.alt {
   border-color: #dddddd;

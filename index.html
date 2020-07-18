@@ -8,11 +8,14 @@
 	<link rel="icon" href="images/favicon.png" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164557713-1"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-164557713-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164557713-1');
 	</script>
 
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -85,7 +88,7 @@
 					<li>
 						<span class="icon solid major style1 fa-flask"></span>
 						<h3>Data Science</h3>
-						<p>from state-of-the-art model development to more general machine learning solutions</p>
+						<p>from routine machine learning solutions to state-of-the-art model development</p>
 					</li>
 					<li>
 						<span class="icon solid major style2 fa-code"></span>
@@ -114,8 +117,8 @@
 			<!-- Testimonials -->
 			<section id="testimonials" class="main special">
 				<header class="major">
-					<h2>Testimonials</h2>
-					<p>What clients say about Gradient Ascent</p>
+					<h2>Projects</h2>
+					<p>Past and current projects of Gradient Ascent</p>
 					<div class="wrapper">
 
 						<!-- <div class="row"> -->
@@ -124,28 +127,31 @@
 
 								<div class="item">
 									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="images/clients/dealroom.png" alt="">
-										<p>"Helping us migrate our team to a cloud-native workflow using Kubeflow."</p>
+										<i class="fa fa-database fa-5x client-logo-placeholder"></i>
+										<p>Training the data science team of an Amsterdam-based data provider for
+											cloud-native workflows using Kubeflow</p>
+										</div>
+										<div class="testimonial-name">Technology sector</div>
 									</div>
-									<div class="testimonial-name">Dealroom</div>
+									
+									<div class="item">
+										<div class="shadow-effect">
+											<img class="imgPlaceholder" src="images/clients/whitespace.png" alt="">
+											<p>"We're extremely pleased with Gradient Ascent's support and guidance in
+											setting up our GitOps, CI/CD and Kubernetes workflows. We've been fortunate
+											to have them on our team."</p>
+											<p><br>Tom Savels<br>Managing Partner @<br>White Space Energy</p>
+										</div>
+									<div class="testimonial-name">Energy sector</div>
 								</div>
 
 								<div class="item">
 									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="images/clients/whitespace.png" alt="">
-										<p>"We’re extremely pleased with Michael’s support and guidance in setting up our GitOps, CI/CD and Kubernetes workflows. We’ve been fortunate to have him on our team."</p>
-										<p>Tom Savels<br>Managing Partner</p>
+										<i class="fa fa-photo-video fa-5x client-logo-placeholder"></i>
+										<p>Implementing a state-of-the-art machine-learning system, a goal set
+										   after an AI workshop and subsequent use-case workshop</p>
 									</div>
-									<div class="testimonial-name">White Space Energy</div>
-								</div>
-
-								<div class="item">
-									<div class="shadow-effect">
-										<img class="imgPlaceholder" src="images/clients/ambassadors.png" alt="">
-										<p>"Implementing a state-of-the-art text-to-speech system for us, a goal set
-											after an AI workshop and subsequent use-case workshop."</p>
-									</div>
-									<div class="testimonial-name">Ambassadors</div>
+									<div class="testimonial-name">Media sector</div>
 								</div>
 
 							</div>
@@ -162,7 +168,8 @@
 					<h2>Technologies</h2>
 					<p>Cloud-native data science means taking full use of cloud technologies to work with datasets of
 						any size, automate data collection and processing, model training and
-						deployment. We use open-source, industry-standard tooling to build scalable, performant and maintainable solutions.</p>
+						deployment. We use open-source, industry-standard tooling to build scalable, performant and
+						maintainable solutions.</p>
 					<div class='marquee'>
 						<img src="images/techs/kubernetes.png">
 						<img src="images/techs/kubeflow.png">
@@ -198,9 +205,9 @@
 					<ul class="features">
 						<li>
 							<h3 style="font-weight:500;margin-top:2em;">Data Science</h3>
-							<p>state-of-the-art AI model development</p>
-							<p>machine learning model development</p>
-							<p>data visualisation</p>
+							<p>routine machine learning model development</p>
+							<p>state-of-the-art model development</p>
+							<p>data exploration and visualisation</p>
 
 							<h3 style="font-weight:500;margin-top:2em;">Software Engineering</h3>
 							<p>back-end microservice development</p>
@@ -210,17 +217,17 @@
 							<h3 style="font-weight:500;margin-top:2em;">DataOps / DevOps</h3>
 							<p>model deployment</p>
 							<p>model deployment automation</p>
-							<p>setup streamlined data labeling flow</p>
-							<p>setup active learning labeling flow</p>
-							<p>setup CI/CD with kubernetes</p>
+							<p>setup of streamlined data labeling flow</p>
+							<p>setup of active learning labeling flow</p>
+							<p>setup of CI/CD with kubernetes</p>
 							<p>secure software deployment</p>
 
 
 							<h3 style="font-weight:500;margin-top:2em;">Consulting</h3>
-							<p>hands-on AI workshop</p>
-							<p>AI use-case workshop</p>
-							<p>AI roadmap workshop</p>
-							<p>training teams</p>
+							<p>hands-on AI workshops</p>
+							<p>AI use-case workshops</p>
+							<p>AI roadmap workshops</p>
+							<p>technical trainings</p>
 						</li>
 					</ul>
 
@@ -242,14 +249,15 @@
 					<h2>About</h2>
 					<h3 style="font-weight:500;margin-top:2em;">Approach</h3>
 					<p>Readable code, minimal microservices and modular architectures to reduce complexity,
-						maintenance and bugs. <br>
-						Industry standard tools, consise documentation and clear instruction to avoid a
-						single-point-of-failure and accumulating technical debt.</p>
+						maintenance and bugs<br>
+						Industry standard tools, consise documentation and clear instruction to increase maintainability
+						and avoid
+						accumulating technical debt</p>
 					<h3 style="font-weight:500;margin-top:2em;">Availability</h3>
-					<p>Currently limited. Contact to discuss planning.</p>
+					<p>Currently limited, but open to discuss future projects</p>
 					<h3 style="font-weight:500;margin-top:2em;">Region</h3>
-					<p>Globally through remote working.<br>
-						On-site up to 1 hour radius from Amsterdam.</p>
+					<p>Globally through remote working<br>
+						On-site up to 1 hour radius from Amsterdam</p>
 				</header>
 				<!-- <footer class="major">
 					<ul class="actions special">
@@ -297,7 +305,8 @@
 							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 						</ul> -->
 			</section>
-			<p class="copyright">&copy; Gradient Ascent. Built on a template from <a href="https://html5up.net">HTML5 UP</a>.</p>
+			<p class="copyright">&copy; Gradient Ascent. Built on a template from <a href="https://html5up.net">HTML5
+					UP</a>.</p>
 		</footer>
 	</div>
 
