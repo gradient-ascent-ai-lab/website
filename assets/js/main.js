@@ -43,8 +43,8 @@
         },
       },
       size: {
-        value: 3,
-        random: true,
+        value: 2,
+        random: false,
         anim: {
           enable: false,
           speed: 2,
@@ -63,7 +63,7 @@
         enable: true,
         speed: 3,
         direction: "none",
-        random: false,
+        random: true,
         straight: false,
         out_mode: "out",
         bounce: true,
@@ -78,14 +78,14 @@
       detect_on: "canvas",
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: "grab",
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: "push",
         },
-        resize: true,
+        resize: false,
       },
       modes: {
         grab: {
@@ -207,7 +207,7 @@
       });
   }
 
-  // Scrolly.
+  
   $(".scrolly").scrolly({
     speed: 1000,
   });
@@ -217,7 +217,7 @@
     duplicated: true,
     gap: 0,
     direction: "left",
-    pauseOnHover: true,
+    pauseOnHover: false,
   });
 
   $("#testimonials-list").owlCarousel({
