@@ -1,26 +1,49 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-	<title>Gradient Ascent</title>
+	<title>Gradient Ascent — Cloud-native data science consulting, Amsterdam</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Gradient Ascent is an Amsterdam-based consultancy for cloud-native data science: machine-learning model development, deployment automation and MLOps on Kubernetes." />
+	<link rel="canonical" href="https://gradientascent.nl/" />
 	<link rel="icon" href="images/favicon.png" />
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164557713-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+	<meta name="theme-color" content="#1f2833" />
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-164557713-1');
-	</script>
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Gradient Ascent" />
+	<meta property="og:title" content="Gradient Ascent — Cloud-native data science consulting" />
+	<meta property="og:description"
+		content="Machine-learning model development, deployment automation and MLOps on Kubernetes. Based in Amsterdam, working remotely worldwide." />
+	<meta property="og:url" content="https://gradientascent.nl/" />
+	<meta property="og:image" content="https://gradientascent.nl/images/ga-black.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Gradient Ascent — Cloud-native data science consulting" />
+	<meta name="twitter:description"
+		content="Machine-learning model development, deployment automation and MLOps on Kubernetes. Based in Amsterdam, working remotely worldwide." />
+	<meta name="twitter:image" content="https://gradientascent.nl/images/ga-black.png" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"name": "Gradient Ascent",
+		"description": "Cloud-native data science consulting: machine-learning model development, deployment automation and MLOps on Kubernetes.",
+		"url": "https://gradientascent.nl/",
+		"email": "info@gradientascent.nl",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Amsterdam",
+			"addressCountry": "NL"
+		},
+		"areaServed": "Worldwide"
+	}
+	</script>
 </head>
 
 <body class="is-preload">
@@ -31,16 +54,16 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
-			<span class="logo"><img src="images/ga-transparent.png" alt="" /></span>
+			<span class="logo"><img src="images/ga-transparent.png" alt="Gradient Ascent" /></span>
 			<h1>Gradient Ascent</h1>
-			<p>Cloud-native data science consulting<br />
+			<p>Cloud-native data science consulting</p>
 		</header>
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
 				<li><a href="#activities" class="active">Activities</a></li>
-				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#technologies">Technologies</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#about">About</a></li>
@@ -64,18 +87,16 @@
 							infrastructure automation.
 							Based in Amsterdam, Gradient Ascent was founded to explore and exploit these possibilities,
 							and to help our clients to do the same.</p>
-						<!-- <ul class="actions">
-							<li><a href="generic.html" class="button">Learn More</a></li>
-						</ul> -->
+						<ul class="actions">
+							<li><a href="#contact" class="button primary">Start a conversation</a></li>
+						</ul>
 					</div>
 					<div class="image">
 						<span class="icon solid major fa-stack fa-4x">
-							<i class="fas cloud fa-cloud fa-stack-2x"></i>
+							<i class="fas fa-cloud fa-stack-2x"></i>
 							<i class="fas fa-flask fa-stack-1x fa-inverse"></i>
 						</span>
 					</div>
-					<!-- <span class="icon solid major style5 fa-user-tie"></span> -->
-					<!-- <span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
 				</div>
 			</section>
 
@@ -97,31 +118,24 @@
 					</li>
 					<li>
 						<span class="icon solid major style3 fa-pallet"></span>
-						<h3>DataOps & DevOps</h3>
-						<p>from continous integration and deployment of software to continuous training of models</p>
+						<h3>DataOps &amp; DevOps</h3>
+						<p>from continuous integration and deployment of software to continuous training of models</p>
 					</li>
 					<li>
 						<span class="icon solid major style4 fa-user-tie"></span>
-						<h3>Consulting & Training</h3>
+						<h3>Consulting &amp; Training</h3>
 						<p>from AI workshops and defining an AI roadmap to training your data science team for
 							cloud-native workflows</p>
 					</li>
 				</ul>
-				<!-- <footer class="major">
-					<ul class="actions special">
-						<li><a href="generic.html" class="button">Learn More</a></li>
-					</ul>
-				</footer> -->
 			</section>
 
-			<!-- Testimonials -->
-			<section id="testimonials" class="main special">
+			<!-- Projects -->
+			<section id="projects" class="main special">
 				<header class="major">
 					<h2>Projects</h2>
 					<p>Past and current projects of Gradient Ascent</p>
 					<div class="wrapper">
-
-						<!-- <div class="row"> -->
 						<div class="col-sm-12">
 							<div id="testimonials-list" class="owl-carousel">
 
@@ -130,20 +144,21 @@
 										<i class="fa fa-database fa-5x client-logo-placeholder"></i>
 										<p>Training the data science team of an Amsterdam-based data provider for
 											cloud-native workflows using Kubeflow</p>
-										</div>
-										<div class="testimonial-name">Technology sector</div>
 									</div>
+									<div class="testimonial-name">Technology sector</div>
+								</div>
 
-									<div class="item">
-										<div class="shadow-effect">
-											<img class="imgPlaceholder" src="images/clients/whitespace.png" alt="">
-											<p>"We're extremely pleased with Gradient Ascent's support and guidance in
+								<div class="item">
+									<div class="shadow-effect">
+										<img class="imgPlaceholder" src="images/clients/whitespace.png"
+											alt="White Space Energy" />
+										<p>"We're extremely pleased with Gradient Ascent's support and guidance in
 											setting up our GitOps, CI/CD and Kubernetes workflows. We've been fortunate
 											to have them on our team."</p>
-											<p>Tom Savels</p>
-											<p>Managing Partner</p>
-											<p>White Space Energy</p>
-										</div>
+										<p>Tom Savels</p>
+										<p>Managing Partner</p>
+										<p>White Space Energy</p>
+									</div>
 									<div class="testimonial-name">Energy sector</div>
 								</div>
 
@@ -151,7 +166,7 @@
 									<div class="shadow-effect">
 										<i class="fa fa-photo-video fa-5x client-logo-placeholder"></i>
 										<p>Implementing a state-of-the-art machine-learning system, a goal set
-										   after an AI workshop and subsequent use-case workshop</p>
+											after an AI workshop and subsequent use-case workshop</p>
 									</div>
 									<div class="testimonial-name">Media sector</div>
 								</div>
@@ -159,20 +174,17 @@
 								<div class="item">
 									<div class="shadow-effect">
 										<i class="fa fa-comments fa-5x client-logo-placeholder"></i>
-										<p>Implemented an automated model training pipeline for intent recognition models,
-										   making deployed models accessible through a custom microservice.
-										</p>
+										<p>Implemented an automated model training pipeline for intent recognition
+											models, making deployed models accessible through a custom microservice.</p>
 									</div>
 									<div class="testimonial-name">Technology sector</div>
 								</div>
 
 							</div>
 						</div>
-						<!-- </div> -->
 					</div>
+				</header>
 			</section>
-			<!-- Utilizing open-source tooling such as KubeFlow and Kubernetes, it is possible to achieve levels of automation, robustness and scalability that are multiples of previous standards.</p> -->
-			</header>
 
 			<!-- Technologies -->
 			<section id="technologies" class="main special">
@@ -183,29 +195,19 @@
 						deployment. We use open-source, industry-standard tooling to build scalable, performant and
 						maintainable solutions.</p>
 					<div class='marquee'>
-						<img src="images/techs/kubernetes.png">
-						<img src="images/techs/kubeflow.png">
-						<img src="images/techs/seldon.png">
-						<img src="images/techs/fastapi.png">
-						<img src="images/techs/python.png">
-						<img src="images/techs/numpy.png">
-						<img src="images/techs/pytorch.png">
-						<img src="images/techs/keras.png">
-						<img src="images/techs/sklearn.png">
-						<img src="images/techs/gcp.png">
-						<img src="images/techs/aws.png">
+						<img src="images/techs/kubernetes.png" alt="Kubernetes" />
+						<img src="images/techs/kubeflow.png" alt="Kubeflow" />
+						<img src="images/techs/seldon.png" alt="Seldon" />
+						<img src="images/techs/fastapi.png" alt="FastAPI" />
+						<img src="images/techs/python.png" alt="Python" />
+						<img src="images/techs/numpy.png" alt="NumPy" />
+						<img src="images/techs/pytorch.png" alt="PyTorch" />
+						<img src="images/techs/keras.png" alt="Keras" />
+						<img src="images/techs/sklearn.png" alt="scikit-learn" />
+						<img src="images/techs/gcp.png" alt="Google Cloud Platform" />
+						<img src="images/techs/aws.png" alt="Amazon Web Services" />
 					</div>
-					<!-- <p>Data management</p>
-					<p>Training management</p>
-					<p>Experiment tracking</p>
-					<p>Deployment</p> -->
-					<!-- Utilizing open-source tooling such as KubeFlow and Kubernetes, it is possible to achieve levels of automation, robustness and scalability that are multiples of previous standards.</p> -->
 				</header>
-				<!-- <footer class="major">
-								<ul class="actions special">
-									<li><a href="generic.html" class="button">Learn More</a></li>
-								</ul>
-							</footer> -->
 			</section>
 
 			<!-- Services -->
@@ -234,7 +236,6 @@
 							<p>setup of CI/CD with kubernetes</p>
 							<p>secure software deployment</p>
 
-
 							<h3 style="font-weight:500;margin-top:2em;">Consulting</h3>
 							<p>hands-on AI workshops</p>
 							<p>AI use-case workshops</p>
@@ -243,16 +244,7 @@
 						</li>
 					</ul>
 
-
-
-
 				</header>
-				<!-- <footer class="major">
-								<ul class="actions special">
-									<li><a href="generic.html" class="button primary">Get Started</a></li>
-									<li><a href="generic.html" class="button">Learn More</a></li>
-								</ul>
-							</footer> -->
 			</section>
 
 			<!-- About -->
@@ -262,61 +254,30 @@
 					<h3 style="font-weight:500;margin-top:2em;">Approach</h3>
 					<p>Clear code, minimal microservices and modular architectures to minimize complexity,
 						maintenance and bugs. </p>
-					<p>Industry standard tools, consise documentation and clear instruction to maximize maintainability
+					<p>Industry standard tools, concise documentation and clear instruction to maximize maintainability
 						and minimize technical debt.</p>
 					<h3 style="font-weight:500;margin-top:2em;">Availability</h3>
-					<p>Currently limited, but open to discuss future projects</p>
+					<p>Open to discuss new projects</p>
 					<h3 style="font-weight:500;margin-top:2em;">Region</h3>
-					<p>Globally through remote working<br>
+					<p>Globally through remote working<br />
 						On-site up to 1 hour radius from Amsterdam</p>
 				</header>
-				<!-- <footer class="major">
-					<ul class="actions special">
-						<li><a href="generic.html" class="button primary">Get Started</a></li>
-						<li><a href="generic.html" class="button">Learn More</a></li>
-					</ul>
-				</footer> -->
 			</section>
 		</div>
 
 		<!-- Footer -->
 
 		<footer id="footer">
-			<!-- <section id="contact">
+			<section id="contact">
 				<h2>Get in touch</h2>
-				<form id="form" method="post" action="assets/php/mailer.php">
-					<div class="row gtr-uniform">
-						<div class="col-6 col-12-xsmall">
-							<input type="text" name="name" id="name" value="" placeholder="Name" />
-						</div>
-						<div class="col-6 col-12-xsmall">
-							<input type="email" name="email" id="email" value="" placeholder="Email" />
-						</div>
-						<div class="col-12">
-							<textarea name="message" id="message" placeholder="Your message"
-								rows="6"></textarea>
-						</div>
-						<div class="col-12">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" class="secondary" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</section> -->
-			<section>
-				<h2>Gradient Ascent</h2>
 				<dl class="alt">
 					<dt>Location</dt>
 					<dd>Amsterdam &bull; Netherlands</dd>
 					<dt>Email</dt>
 					<dd><a href="mailto:info@gradientascent.nl">info@gradientascent.nl</a></dd>
 				</dl>
-				<!-- <ul class="icons">
-							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-						</ul> -->
 			</section>
-			<p class="copyright">&copy; Gradient Ascent</a>.</p>
+			<p class="copyright">&copy; Gradient Ascent</p>
 		</footer>
 	</div>
 

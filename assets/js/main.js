@@ -227,7 +227,7 @@
     margin: 0,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 30,
+    autoplayTimeout: 6000,
     smartSpeed: 450,
     responsive: {
       0: {
