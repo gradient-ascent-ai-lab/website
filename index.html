@@ -24,6 +24,17 @@
 		content="Machine-learning model development, deployment automation and MLOps on Kubernetes. Based in Amsterdam, working remotely worldwide." />
 	<meta name="twitter:image" content="https://gradientascent.nl/images/ga-black.png" />
 
+	<!-- Google Analytics 4, cookieless. client_storage:'none' means no cookie is
+	     set, so no consent banner is needed; the tradeoff is that returning
+	     visitors count as new ones. Referrer, geography and volume still work. -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QC8F91SN3S"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-QC8F91SN3S', { client_storage: 'none' });
+	</script>
+
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
